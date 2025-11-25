@@ -1,48 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Q1 Skills Tests</title>
-    <link rel="stylesheet" href="styles_Q1SkillsTest.css">
+    <title>OBMC Enroll Now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<Body>
-<form>
-    <h1 style="text-align: center; font-family: comic sans ms; font-size: 35px;">OBMC Robotics Club Application Form</h1>
-    <p style="text-align: center; font-family: comic sans ms; font-size:20px;">Welcome to Robotics club application form of school year 2025-2026!</p>
-    <label for="name">Full Name:</label><br>    
-    <input type="placeholder" placeholder="Enter your name"> <br>
-    <Label for="email">Email Address:</Label><br>
-    <input type="email" placeholder="Enter your email"> <br>
-    <label>Grade Level</label> <br>
-    7<input type="radio" name="grade">
-    8<input type="radio" name="grade"> 
-    9<input type="radio" name="grade">
-    10<input type="radio" name="grade"> <br>
-    <label>Section</label> <br>
-    <select>
-        <option>Emerald</option>
-        <option>Ruby</option>
-        <option>Sapphire</option>
-        <option>Topaz</option>
-        <option>Jade</option>
-    </select> <br>
-    <label>Area of interest (click all that apply)</label> <br>
-    Programming<input type="checkbox">
-    Electronics<input type="checkbox">
-    Mechanics<input type="checkbox"> <br>
-    <br>
-    <label>Reason for Applying</label> <br>
-    <textarea cols="80" rows="15" placeholder="State your reason here..."></textarea>
-    <br>
-    <p>Still unsure to join? Click a link down below for more information.</p> 
-    <a href="https://youtu.be/5bWN9LqNzuw" target="_blank">Why join a Robotics Club?</a> <br>
-    <a href="https://youtu.be/HvMQONnCXbE" target="_blank">An introduction to robotics🤖</a>
-    <br>
-    <input type="submit" value="Submit">
-</form>
-</Body>
+    <body>
+<style>
+    body {
+        background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/20f7dd81-6dfc-4b31-a83e-c0e2b3b1acc5/O.B.+Montessori+Center+Program+-+Grade+School+Intermediate);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        color:rgb(251, 17, 17);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .navbar {
+        background-color: rgb(47, 105, 118);
+    }
+
+    .col-lg-12 {
+        background-color: rgba(237, 237, 237, 0.678); 
+        border-radius: 10px;
+        text-align: left;
+        filter: drop-shadow(0px 5px 14px rgba(59,59,59,0.48));
+-webkit-filter: drop-shadow(0px 5px 14px rgba(59,59,59,0.48));
+-moz-filter: drop-shadow(0px 5px 14px rgba(59,59,59,0.48));
+    }
+
+    label {
+        text-align:left;
+    }
+    .navbar-brand img {
+        height: 50px;
+
+    }
+</style>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"> <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1724046681-141.png" alt="Logo"></a>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Enroll Now</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" class="form-control me-2" placeholder="Search">
+                    <button type="button" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="display-1"><b>Enroll Now!</b></h1>
+    </div>
+    <div class="container mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 p-4">
+                    <p class="display-6">Student Information</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label>Male</label><input type="radio" name="gender" class="form-check-input">
+                            <label>Female</label><input type="radio" name="gender" class="form-check-input">
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthdate" class="form-label">Birthdate</label>
+                            <input type="date" class="form-control" id="birthdate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gradeLevel" class="form-label">Grade Level</label>
+                            <select class="form-select" id="gradeLevel" required>
+                                <option value="" disabled selected>Select grade level</option>
+                                <option value="nursery">Junior Casa</option>
+                                <option value="kindergarten">Junior Advanced Casa</option>
+                                <option value="Advancedcasa">Advanced Casa</option>
+                                <option value="grade1">Grade 1</option>
+                                <option value="grade2">Grade 2</option>
+                                <option value="grade3">Grade 3</option>
+                                <option value="grade4">Grade 4</option>
+                                <option value="grade5">Grade 5</option>
+                                <option value="grade6">Grade 6</option>
+                                <option value="grade7">Grade 7</option>
+                                <option value="grade8">Grade 8</option>
+                                <option value="grade9">Grade 9</option>
+                                <option value="grade10">Grade 10</option>
+                                <option value="grade11">Grade 11</option>
+                                <option value="grade12">Grade 12</option>
+                            </select>
+                        <div class="mb-3">
+                    <input type="checkbox" class="form-check-input"><label>I confirm that the information provided is true and complete.</label>
+                        </div> 
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+                
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
+
 <!--
-Background image: https://unsplash.com/photos/a-close-up-of-a-computer-circuit-board-iGheu30xAi8
-Youtube(Why join a Robotics Club?): https://youtu.be/5bWN9LqNzuw
-Youtube(An introduction to robotics🤖): https://youtu.be/HvMQONnCXbEs   
+Filter: https://cssgenerator.org/filter-css-generator.html
 -->
